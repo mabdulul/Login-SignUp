@@ -38,7 +38,7 @@ class Login extends Component {
 
     if (reply.status === 200) {
       const userData = await response.json();
-      this.context.loggedIn(
+      this.context.setLogin(
         userData.isValid,
         userData.personid,
         userData.firstname,
@@ -56,7 +56,7 @@ class Login extends Component {
     }
 
     if (reply.status !== 200) {
-      this.context.loggedIn(false);
+      this.context.setLogin(false);
       console.log(this.context);
     }
     this.setState({
