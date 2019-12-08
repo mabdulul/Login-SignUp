@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Baskervville', serif;
+    font-size: 2rem;
+}
+
+
+nav {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    font-size: 15px;
+
+}
+
+nav ul {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex: 0 1 30vw;
+}
+
+nav ul li a {
+    color: black
+}
+
+.logo {
+    flex: 0 1 32vw;
+    text-align: center;
+}
+
+.nav-right {
+    border: 2px solid black;
+    padding: 10px;
+}
